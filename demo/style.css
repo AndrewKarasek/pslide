@@ -1,0 +1,38 @@
+.pslider{
+	width: 50%;
+	margin: 0 auto;
+	overflow: auto;
+	position: relative;
+}
+
+
+#pslider{
+	width: 20%;
+	margin-left: 5%;
+}
+
+
+#fslider{
+	width: 25%;
+	margin-left: 75%;
+}
+
+img{
+	max-width: 100%;
+	float: left;
+}
+
+.test{
+	padding: 5em;
+	font-size: 4em;
+	font-family: helvetica;
+	font-style: bold;
+	background-color: rgb(30,30,30);
+	color: white;
+	width: 70%;
+}
+
+.pslide-activelink{
+	color: red;
+	font-size: 3em;
+}

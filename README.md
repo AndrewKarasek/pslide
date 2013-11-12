@@ -1,3 +1,3 @@
-# jQuery AJAX Slider 
+# pslide jQuery image slider
 
-built to do stuff
+pslide is a image slider that dynamically loads your images keeping your initial page load time down but your transitions solid.

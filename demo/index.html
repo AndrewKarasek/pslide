@@ -2,17 +2,48 @@
 <html>
 	<head>
 		<title>jQuery Boilerplate</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/jquery-1.10.2.min.js"></script>
 		<script src="../src/jquery.boilerplate.js"></script>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div id="element"></div>
+		<div id="pslider" class="pslider">
+			<img src="images/W1.jpg" data-slide="images/W2.jpg images/W3.jpg images/W4.jpg" />
+		</div>
+
+		<div id="xslider" class="pslider">
+			<img src="images/bp.jpg" data-slide="images/c2.jpg images/c3.jpg images/c2.jpg images/bp.jpg images/c3.jpg" />
+		</div>
+
+
+
+		<div id="fslider" class="pslider">
+			<img src="images/W1.jpg" data-slide="images/W2.jpg images/W3.jpg images/W4.jpg" />
+		</div>
+
+
+		<div class="test">I TEST 4 U</div>
 		<script>
-			$(function() {
-				$("#element").defaultPluginName({
-					propertyName: "a custom value"
+			$(window).load(function(){
+				$("#xslider").pSlide({
+					duration: 500,
+					delay: 2000,
 				});
+				
+				$("#pslider").pSlide({
+					animation: "slide",
+					duration: 3000,
+					delay: 2000,
+					auto: false
+				});
+
+				$("#fslider").pSlide({
+					animation: "fade",
+					duration: 1000
+				}) 
 			});
+
+		
 		</script>
 	</body>
 </html>
